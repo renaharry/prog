@@ -1,20 +1,36 @@
 body{
+    background-color: #ffffff;
     margin:0;
     padding:0;
     text-align:left;
     font-size: 32px;
+    font-family: "YuGothic";
 }
 header{
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
+    
+    background-color: #ffffff;
+    border-bottom: 3px;
+    text-align: center;
+    color: #000000;
+}
+
+main{
+    border-top: 3px;
+    border-bottom:0px;
+    color: #000000;
     text-align: center;
 }
-main{
-    border-bottom:1px solid #ccc;
+
+div{
+    background-color: #ffffff;
 }
+
+
+
+
 footer{
-    background-color: #fff;
-    border-bottom:1px solid #ccc;
+    background-color: #FF9999;
+    border-bottom:0px solid #ccc;
     text-align: center;
 }
 p{
@@ -25,7 +41,8 @@ p{
 }
 ul{
     padding: 0;
-    border-top: 1px solid #000000;
+    border-top: 3px solid #000099;
+    border-bottom: 3px solid #000099;
     display:table;  /* 定義 */
     table-layout: fixed;
     width:100%;
@@ -33,8 +50,8 @@ ul{
 li{
     text-align: center;
     list-style-type:none;
-    border: 1px solid #666;
-    background-color: #FFF;
+    border: 1px solid #000099;
+    background-color: #FF9999;
     display:table-cell;  /* 定義 */
     cursor: pointer;
 }

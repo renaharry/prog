@@ -24,43 +24,35 @@
 <footer>フッター</footer>
 <script>
 
-const echo = document.querySelector("#echo");
+//*1.クリックイベント
+//*2.乱数を生成
+//*3.IF文を５個用意
+//*4.IF文の中に＄("#echo").html()を使って表示させる
 
-const pull = document.querySelector("#pull");
-pull.style.color = "#DD0000";
-
-pull.onclick = function(){
-
+$("#pull").on("click",function(){
     const num = Math.ceil(Math.random() * 5);
 
     if(num == 1){
-    let echo = document.querySelector("#echo");
-    echo.innerHTML = '<img src = "dai.jpg">';
-    
+        // $("#echo").html("大吉");
+        $("#echo").html('<img src = "dai.jpg">');
     }
     if(num == 2){
-    let echo = document.querySelector("#echo");
-    echo.innerHTML = '<img src = "tyuu.jpg">';
-    
+        // $("#echo").html("中吉");
+        $("#echo").html('<img src = "tyuu.jpg">');
     }
-
     if(num == 3){
-    let echo = document.querySelector("#echo");
-    echo.innerHTML = '<img src = "syou.jpg">';
+        // $("#echo").html("小吉");
+        $("#echo").html('<img src = "syou.jpg">');
     }
-
     if(num == 4){
-    let echo = document.querySelector("#echo");
-    echo.innerHTML = '<img src = "ki.jpg">';
+        // $("#echo").html("吉");
+        $("#echo").html('<img src = "ki.jpg">');
     }
-
     if(num == 5){
-    let echo = document.querySelector("#echo");
-    echo.innerHTML = '<img src = "kyou.jpg">';
+        // $("#echo").html("凶");
+        $("#echo").html('<img src = "kyou.jpg">');
     }
-
-}
-
+});
 </script>
 </body>
 </html>
